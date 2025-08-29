@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora 2.0</title>
+</head>
+<header>   
+    <h2>Calculadora 2.0</h2>
+</header>
+<body>
+    <div class="calculadora">
+        <p id="resultado"></p>
+
+        <div>
+            <button onclick="ingresar('7')">7</button>
+            <button onclick="ingresar('8')">8</button>
+            <button onclick="ingresar('9')">9</button>
+            <button onclick="operar('/')">/</button>
+        </div>
+        <div>
+            <button onclick="ingresar('4')">4</button>
+            <button onclick="ingresar('5')">5</button>
+            <button onclick="ingresar('6')">6</button>
+            <button onclick="operar('*')">*</button>
+        </div>
+        <div>
+            <button onclick="ingresar('1')">1</button>
+            <button onclick="ingresar('2')">2</button>
+            <button onclick="ingresar('3')">3</button>
+            <button onclick="operar('-')">-</button>
+        </div>
+        <div>
+            <button onclick="ingresar('0')">0</button>
+            <button onclick="borrarUltimo()"><</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="operar('+')">+</button>
+        </div>
+        <div>
+            <button onclick="guardarMemoria()">M+</button>
+            <button onclick="usarMemoria()">M</button>
+            <button onclick="limpiar()">C</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
